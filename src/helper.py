@@ -1,5 +1,4 @@
 from langchain_core.prompts import PromptTemplate
-from langchain.chains import RetrievalQA
 from pinecone import Pinecone, ServerlessSpec
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.prompts import PromptTemplate
@@ -7,7 +6,6 @@ from langchain_groq import ChatGroq
 from langchain_pinecone import PineconeEmbeddings
 import os
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
-from langchain_community.llms import CTransformers
 from langchain_community.vectorstores import Pinecone as PineconeStore
 
 
